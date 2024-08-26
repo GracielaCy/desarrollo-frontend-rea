@@ -9,6 +9,8 @@ import { useState } from "react";
 const LoginForm = () => {
     const [values, handleChange] = useForm({ username: '', email: '', password: '' });
     const [showModalInfo, setShowModalInfo] = useState(false);
+   // para ver y ocultar password
+    const [showPassword, setShowPassword] = useState(false); 
     const form = useSelector(state => state.form);
     const dispatch = useDispatch();
 
@@ -28,6 +30,11 @@ const LoginForm = () => {
     const hideModalInfo = () => {
         setShowModalInfo(false);
     }
+     //ver password 
+    const toggleShowPassword= () => {
+        setShowPassword(!showPassword);
+    }
+    
 
     return (
         <motion.div
@@ -67,13 +74,21 @@ const LoginForm = () => {
                     <div>
                         <label htmlFor="password">Password</label>
                         <input
-                            type="password"
+                            type={showPassword ? "text" : "password"}
                             id="password"
                             name="password"
                             value={values.password}
                             onChange={handleChange}
                         />
+                         <button 
+                                type='button' 
+                                onClick={toggleShowPassword} 
+                                className='show-hide-button'
+                        >
+                            {showPassword ? 'Hide' : 'Show'}
+                        </button>
                     </div>
+
                     <div className="button-container">
                         <button type="submit">Submit</button>
                         <Link>Logout</Link>
