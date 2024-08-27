@@ -167,3 +167,42 @@ span {
   color: #f9f9f9;
 }
 
+
+
+/* lading page */
+.landing-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.landing-page h1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome-section, .topics-covered, .additional-resources {
+  margin: 20px 0;
+}
+
+.welcome-section p {
+  font-size: 1.2em;
+}
+
+.topics-covered ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.topics-covered li {
+  margin: 5px 0;
+}
+.landing-footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
