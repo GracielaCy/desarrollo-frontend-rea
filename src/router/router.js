@@ -8,6 +8,8 @@ import App from "../App";
 
 const basename = process.env.NODE_ENV === 'production' ? '/desarrollo-frontend-rea' : '/';
 
+
+
 const routes = createBrowserRouter([
     {
         path: '/',

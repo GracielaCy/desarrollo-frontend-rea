@@ -11,6 +11,8 @@ const LoginForm = () => {
     const [showModalInfo, setShowModalInfo] = useState(false);
    // para ver y ocultar password
     const [showPassword, setShowPassword] = useState(false); 
+    //para desloguearse
+    const [showLogoutModal, setShowLogoutModal] = useState(false);
     const form = useSelector(state => state.form);
     const dispatch = useDispatch();
 
@@ -33,8 +35,12 @@ const LoginForm = () => {
      //ver password 
     const toggleShowPassword= () => {
         setShowPassword(!showPassword);
-    }
+    };
     
+    //desloguearse
+    const handleLogout = () => {
+        setShowLogoutModal(true);
+    };
 
     return (
         <motion.div
@@ -47,6 +53,7 @@ const LoginForm = () => {
                 message="Password Incorrecto"
                 onClose={hideModalInfo}
             />
+            {}
             <div className="container">
                 <form onSubmit={handleSubmit}>
                     <h1>Login Form</h1>
@@ -93,7 +100,6 @@ const LoginForm = () => {
                         <button type="submit">Submit</button>
                         <Link>Logout</Link>
                         
-                   
                     </div>
                 </form>
             </div>
