@@ -9,22 +9,22 @@
   }
   
   h1 {
-    margin-bottom: 2cm;
+    
     color: #4CAF50;
-    font-size: 4em;
+    font-size: 3em;
     font-family:cursive;
   }
   p {
     color: #151615;
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-family:cursive;
   }
   
   .input-section input {
-    width: 80%;
+    width: 50%;
     padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 4px;
+    margin-bottom: 10px;
+    border-radius: 3px;
     border: 1px solid #ccc;
     font-size: 16px;
   }
@@ -34,14 +34,14 @@
   }
   
   button {
-    padding: 20px 30px;
-    margin: 90px;
+    padding: 10px 20px;
+    margin: 50px;
     border-radius: 6px;
     border: none;
     background-color: #4CAF50;
     color: white;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 30px;
   }
   
   button:hover {
