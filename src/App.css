@@ -171,15 +171,24 @@ span {
 
 /* lading page */
 .landing-page {
-  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
+}
+.landing-page h1{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 3em;
 }
 
 .landing-page h1 {
   background-color: #4CAF50;
   color: white;
-  padding: 20px;
+  padding: 50px;
   text-align: center;
 }
 
@@ -189,15 +198,32 @@ span {
 
 .welcome-section p {
   font-size: 1.2em;
+  color: #5c5959;
+}
+
+.welcome-section strong {
+  font-size: 1em;
+  color: #1f1d1d;
 }
 
 .topics-covered ul {
   list-style-type: none;
   padding: 0;
+  color: #5c5959;
+}
+.topics-covered b {
+  list-style-type: none;
+  padding: 0;
+  color: #1f1d1d;
 }
 
-.topics-covered li {
-  margin: 5px 0;
+.topics-covered li p {
+  margin: 8px 1;
+
+}
+.additional-resources p {
+color: #5c5959;
+  
 }
 .landing-footer {
   text-align: center;
@@ -205,4 +231,10 @@ span {
   margin-top: 20px;
   font-size: 0.9em;
   color: #666;
+}
+
+.green-line {
+  border: none;
+  border-top: 3px solid #6ac26d;
+  margin: 20px 0;
 }

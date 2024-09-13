@@ -1,0 +1,70 @@
+.dictionary-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: hsl(0, 0%, 91%);
+    border-radius: 8px;
+    box-shadow: 1 1 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 2cm;
+    color: #4CAF50;
+    font-size: 4em;
+    font-family:cursive;
+  }
+  p {
+    color: #151615;
+    font-size: 1.5em;
+    font-family:cursive;
+  }
+  
+  .input-section input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .button-sectsion {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 20px 30px;
+    margin: 90px;
+    border-radius: 6px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .add-button {
+    background-color: #4CAF50;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+  }
+  
+  .translate-button {
+    background-color: #008CBA;
+  }
+  
+  .output-section {
+    margin-top: 20px;
+  }
+  
+  .output-section h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }

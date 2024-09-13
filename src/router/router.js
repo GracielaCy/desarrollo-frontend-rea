@@ -4,6 +4,7 @@ import Default from "../screens/Default";
 import Product from "../screens/Product";
 import LoginForm from "../screens/Forms/LoginForm";
 import LadingPage from "../screens/LadingPage/LadingPage";
+import Dictionary from '../screens/Dictionary/Dictionary';
 import App from "../App";
 
 const basename = process.env.NODE_ENV === 'production' ? '/desarrollo-frontend-rea' : '/';
@@ -30,6 +31,10 @@ const routes = createBrowserRouter([
             {
                 path: '/login',
                 element: <LoginForm />,
+            },
+            {
+                path: '/dictionary',
+                element: <Dictionary />,
             },
         ]
     }
