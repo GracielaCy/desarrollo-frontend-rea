@@ -35,7 +35,7 @@
   
   button {
     padding: 10px 20px;
-    margin: 50px;
+    margin: 40px;
     border-radius: 6px;
     border: none;
     background-color: #4CAF50;
@@ -67,4 +67,23 @@
   .output-section h2 {
     margin-bottom: 10px;
     color: #333;
+  }
+
+.button-section {
+    margin-bottom: 20px;
+}
+
+
+.modal-close-button  {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #658666;
+    color: white;
+    cursor: pointer;
+    font-size: 8px;
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    
   }

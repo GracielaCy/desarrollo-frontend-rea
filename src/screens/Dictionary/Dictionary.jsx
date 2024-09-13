@@ -1,10 +1,10 @@
 
-
 import React, { useState } from 'react';
 import './Dictionary.css';  // Estilos para el módulo
+import  AddModal from '../../components/Modal';
 
 const Dictionary = () => {
-  const [word, setWord] = useState(''); // Estado para almacenar la palabra ingresada
+  const [modalIsOpen, setModalIsOpen] = useState(false); // Estado para almacenar la palabra ingresada
 
   return (
     <div className="dictionary-container">
@@ -16,10 +16,14 @@ const Dictionary = () => {
     
 
       <div className="button-section">
-        <button className="add-button">Agregar palabra</button>
+        <button className="add-button"  onClick={()=>setModalIsOpen(true)}>Agregar palabra</button>
         <button className="delete-button">Eliminar palabra</button>
         <button className="translate-button">Traducir palabra</button>
       </div>
+      < AddModal
+        isOpen={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+      /> 
     </div>
   );
 };
