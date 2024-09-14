@@ -1,4 +1,4 @@
-import { SET_DICTIONARY_DATA } from './dictionaryTypes';
+import { SET_DICTIONARY_DATA, REMOVE_DICTIONARY_DATA } from './dictionaryTypes';
 
 const initialState = {
     dictionary: [] 
