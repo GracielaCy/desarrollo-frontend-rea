@@ -14,8 +14,18 @@ const dictionaryReducer = (state = initialState, action) => {
                     ...state.dictionary,
                     ...action.payload],
             };
-            
-        }
+        }  
+          case REMOVE_DICTIONARY_DATA : {
+            const lenguajeRemove = action.payload.toLowerCase();
+            return {
+                ...state,
+                dictionary: state.dictionary.filter(
+                    lenguajeSet => !Object.values(lenguajeSet).some(lenguaje => lenguaje.toLowerCase()== lenguajeRemove)
+                ),
+            };   
+    
+         }
+        
         default:
             return state;
     }

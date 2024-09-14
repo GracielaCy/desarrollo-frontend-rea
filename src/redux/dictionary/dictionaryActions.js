@@ -1,4 +1,4 @@
-import { SET_DICTIONARY_DATA } from './dictionaryTypes';
+import { SET_DICTIONARY_DATA, REMOVE_DICTIONARY_DATA } from './dictionaryTypes';
 
 export const addDictionaryData = (dictionaryData) => {
     return {
@@ -6,3 +6,11 @@ export const addDictionaryData = (dictionaryData) => {
         payload: dictionaryData,
     };
 };
+export const removeDictionaryData = (lenguaje) =>{
+    return {
+        type: REMOVE_DICTIONARY_DATA,
+        payload: 
+            lenguaje,
+        
+    };
+}
